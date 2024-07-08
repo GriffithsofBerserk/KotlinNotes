@@ -16,5 +16,19 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        println("Hello Kotlin")
+        println(4*5)
+
+        //Değişken - Variable
+        var age = 36
+        println(age)
+        age = 40
+        println(age) // değişti
+
+        //Sabit - Constant
+
+        val x = 32 //sabit
+        println(x)
     }
 }
