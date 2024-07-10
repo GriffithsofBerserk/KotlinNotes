@@ -30,5 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         val x = 32 //sabit
         println(x)
+
+        //Defining
+        val myInteger : Int = 20 //:Double :String
+        println(myInteger)
+
     }
 }
