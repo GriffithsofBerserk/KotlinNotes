@@ -35,5 +35,14 @@ class MainActivity : AppCompatActivity() {
         val myInteger : Int = 20 //:Double :String
         println(myInteger)
 
+        println("----Conversion----")
+        var myString : String = "25"
+
+        println("first :  $myString ")
+
+        var myOtherString = myString.toInt()
+
+        println(myOtherString*2)
+
     }
 }
