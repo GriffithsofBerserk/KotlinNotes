@@ -44,5 +44,16 @@ class MainActivity : AppCompatActivity() {
 
         println(myOtherString*2)
 
+        //Arrays
+
+        val myArray = arrayOf("James","Riemann","Sebastien","Derick")
+        println(myArray[0])
+
+        //Lists
+
+        val myArrayString = arrayListOf<String>("Jane","Caulker")
+        myArrayString.add("Rob")
+        println(myArrayString[2])
+
     }
 }
