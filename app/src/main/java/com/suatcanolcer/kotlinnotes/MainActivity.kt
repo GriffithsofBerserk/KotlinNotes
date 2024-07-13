@@ -55,5 +55,12 @@ class MainActivity : AppCompatActivity() {
         myArrayString.add("Rob")
         println(myArrayString[2])
 
+        //Set
+
+        val setExample = setOf<Int>(1,1,2,3)//tekrarlı elemanı görmezden geliyor.
+        println(setExample.size)
+
+        setExample.forEach { println(it) }
+
     }
 }
