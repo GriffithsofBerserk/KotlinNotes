@@ -62,5 +62,20 @@ class MainActivity : AppCompatActivity() {
 
         setExample.forEach { println(it) }
 
+        //HashSet & HashMap
+
+        val hashsetExample = HashSet<String>()
+        hashsetExample.add("Jessy")
+        hashsetExample.add("Kiraly")
+        println("hashSet Example : $hashsetExample")
+
+        val hashmapExample = hashMapOf<String,Int>()
+        hashmapExample.put("Cole",22)
+        hashmapExample.put("Jude",20)
+        println("hashMap Example : $hashmapExample")
+        println(hashmapExample["Jude"])
+
+
+
     }
 }
