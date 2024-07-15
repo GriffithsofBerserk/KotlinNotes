@@ -86,6 +86,14 @@ class MainActivity : AppCompatActivity() {
         }
         println(dayString)
 
+        //for
+
+        val numbers = arrayOf(2,3,4,5,6,7,8)
+
+        for (res in numbers){
+            val z = res*5
+            println(z)
+        }
 
 
     }
