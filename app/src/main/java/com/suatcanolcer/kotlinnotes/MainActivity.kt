@@ -75,6 +75,17 @@ class MainActivity : AppCompatActivity() {
         println("hashMap Example : $hashmapExample")
         println(hashmapExample["Jude"])
 
+        //If gibi when kullanım ornek
+        val day = 3
+        var dayString = ""
+        when(day){
+            1 -> dayString = "Monday"
+            2 -> dayString = "Tuesday"
+            3 -> dayString = "Wednesday"
+            else -> dayString = ""
+        }
+        println(dayString)
+
 
 
     }
