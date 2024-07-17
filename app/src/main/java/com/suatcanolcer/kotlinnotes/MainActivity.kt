@@ -95,6 +95,14 @@ class MainActivity : AppCompatActivity() {
             println(z)
         }
 
+        //Function
+
+        fun test(){
+            println("Test function")
+        }
+
+        test()
+
 
     }
 }
