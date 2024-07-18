@@ -103,6 +103,20 @@ class MainActivity : AppCompatActivity() {
 
         test()
 
+        //Return
+
+        fun exampleSum(a : Int, b : Int){
+            println(a+b)
+        }
+        exampleSum(5,3)
+
+        fun exampleMultiply(x: Int,y : Int) : Int{
+            return x*y
+        }
+
+        exampleMultiply(8,9)
+
+
 
     }
 }
