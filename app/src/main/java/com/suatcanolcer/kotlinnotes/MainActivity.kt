@@ -1,6 +1,8 @@
 package com.suatcanolcer.kotlinnotes
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -106,15 +108,24 @@ class MainActivity : AppCompatActivity() {
         //Return
 
         fun exampleSum(a : Int, b : Int){
-            println(a+b)
+            val actmain = findViewById<TextView>(R.id.textView)
+            val changeButton = findViewById<Button>(R.id.button)
+            while (true){
+                actmain.text = "Result : ${a + b}"
+            }
+
         }
         exampleSum(5,3)
+
+
 
         fun exampleMultiply(x: Int,y : Int) : Int{
             return x*y
         }
 
-        exampleMultiply(8,9)
+        val res = exampleMultiply(8,9)
+        println(res)
+
 
 
 
