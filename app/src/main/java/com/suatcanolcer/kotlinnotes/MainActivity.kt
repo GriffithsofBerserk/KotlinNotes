@@ -107,10 +107,11 @@ class MainActivity : AppCompatActivity() {
 
         //Return
 
+
         fun exampleSum(a : Int, b : Int){
             val actmain = findViewById<TextView>(R.id.textView)
             val changeButton = findViewById<Button>(R.id.button)
-            while (true){
+            changeButton.setOnClickListener{
                 actmain.text = "Result : ${a + b}"
             }
 
