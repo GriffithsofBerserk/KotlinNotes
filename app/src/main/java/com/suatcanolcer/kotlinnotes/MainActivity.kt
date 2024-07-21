@@ -127,7 +127,16 @@ class MainActivity : AppCompatActivity() {
         val res = exampleMultiply(8,9)
         println(res)
 
+        //classes
+        /*
+        val simpson = Simpson()
+        println(simpson.age)
+        */
 
+        //Constructor
+
+        val simpson = Simpson("Homer",45,"Nuclear Safety")
+        println(simpson.name)
 
 
     }
