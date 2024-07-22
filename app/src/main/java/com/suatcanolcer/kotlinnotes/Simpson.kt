@@ -2,6 +2,11 @@ package com.suatcanolcer.kotlinnotes
 //Primary Constructor
 class Simpson(var name: String,var age: Int,var job: String) {
 
+    private var height = 0
+
+    fun setHeight(): Int {
+        return height
+    }
    /*
     var name = ""
     var age = 0

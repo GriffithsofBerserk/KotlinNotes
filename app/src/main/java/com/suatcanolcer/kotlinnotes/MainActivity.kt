@@ -137,6 +137,7 @@ class MainActivity : AppCompatActivity() {
 
         val simpson = Simpson("Homer",45,"Nuclear Safety")
         println(simpson.name)
+        println(simpson.setHeight())
 
 
     }
