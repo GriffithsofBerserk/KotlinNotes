@@ -137,7 +137,13 @@ class MainActivity : AppCompatActivity() {
 
         val simpson = Simpson("Homer",45,"Nuclear Safety")
         println(simpson.name)
-        println(simpson.setHeight())
+        println(simpson.getHeight())
+
+        //Nullability
+
+        var exString : String? = null
+        //exString = "testtt"
+        println(exString)
 
 
     }
