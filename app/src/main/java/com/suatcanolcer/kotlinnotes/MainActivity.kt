@@ -149,6 +149,20 @@ class MainActivity : AppCompatActivity() {
         //exInt = 5
         println(exInt?.minus(10))
 
+        //Recursive func
+
+        fun toplam(n : Int) : Int{
+            return if(n <= 0){
+                0
+            }else{
+                n+(toplam(n-1))
+            }
+        }
+
+        val number = 5
+        val result = toplam(number)
+        println("Toplam = $result")
+
 
     }
 }
