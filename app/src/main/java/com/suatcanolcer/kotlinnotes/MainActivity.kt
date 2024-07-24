@@ -142,8 +142,12 @@ class MainActivity : AppCompatActivity() {
         //Nullability
 
         var exString : String? = null
-        //exString = "testtt"
+        exString = "testtt"
         println(exString)
+
+        var exInt : Int? = null
+        //exInt = 5
+        println(exInt?.minus(10))
 
 
     }
