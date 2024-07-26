@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        /*
         println("Hello Kotlin")
         println(4*5)
 
@@ -163,6 +163,8 @@ class MainActivity : AppCompatActivity() {
         val result = toplam(number)
         println("Toplam = $result")
 
+        */
 
+        //val simpson = Simpson()
     }
 }
