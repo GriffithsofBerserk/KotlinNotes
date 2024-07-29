@@ -1,7 +1,9 @@
 package com.suatcanolcer.kotlinnotes
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +11,13 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var myTextView: TextView
+    private lateinit var myButton: Button
+    private lateinit var nameText: EditText
+    private lateinit var ageText: EditText
+    private lateinit var jobText: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -166,5 +175,15 @@ class MainActivity : AppCompatActivity() {
         */
 
         //val simpson = Simpson()
+
+        myTextView = findViewById(R.id.result)
+        myButton = findViewById(R.id.button)
+        nameText = findViewById(R.id.name)
+        ageText = findViewById(R.id.age)
+        jobText = findViewById(R.id.job)
+
+        fun buttonClicked(view: View){
+
+        }
     }
 }
