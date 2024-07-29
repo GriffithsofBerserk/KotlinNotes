@@ -183,12 +183,12 @@ class MainActivity : AppCompatActivity() {
         ageText = findViewById(R.id.age)
         jobText = findViewById(R.id.job)
 
-        fun buttonClicked(view : View){
-            name = nameText.text.toString()
-            val age = ageText.text.toString()
-            val job = jobText.text.toString()
-
-            myTextView.text = "Name : ${name} Age : ${age} Job : ${job}"
         }
+    fun buttonClicked(view : View){
+        name = nameText.text.toString()
+        val age = ageText.text.toString()
+        val job = jobText.text.toString()
+
+        myTextView.text = "Name : ${name} Age : ${age} Job : ${job}"
     }
 }
