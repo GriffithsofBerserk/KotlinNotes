@@ -186,9 +186,15 @@ class MainActivity : AppCompatActivity() {
         }
     fun buttonClicked(view : View){
         name = nameText.text.toString()
-        val age = ageText.text.toString()
+        val age = ageText.text.toString().toIntOrNull()
         val job = jobText.text.toString()
 
-        myTextView.text = "Name : ${name} Age : ${age} Job : ${job}"
+        if(age != null) {
+            val simpson = Simpson(name, age, job)
+
+            myTextView.text = "Name : ${simpson.name} Age : ${simpson.age} Job : ${simpson.job}"
+        }else{
+            myTextView.text = "Enter your age properly!"
+        }
     }
 }
