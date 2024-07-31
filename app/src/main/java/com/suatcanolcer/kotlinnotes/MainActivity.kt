@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nameText: EditText
     private lateinit var ageText: EditText
     private lateinit var jobText: EditText
+    var name = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -182,8 +183,12 @@ class MainActivity : AppCompatActivity() {
         ageText = findViewById(R.id.age)
         jobText = findViewById(R.id.job)
 
-        fun buttonClicked(view: View){
+        fun buttonClicked(view : View){
+            name = nameText.text.toString()
+            val age = ageText.text.toString()
+            val job = jobText.text.toString()
 
+            myTextView.text = "Name : ${name} Age : ${age} Job : ${job}"
         }
     }
 }
